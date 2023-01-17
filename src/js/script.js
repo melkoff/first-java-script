@@ -127,3 +127,4 @@ if(enterNumber > requiredNumber){
 }else{
   console.log("Вгадали")
 }
+zz
