@@ -71,7 +71,7 @@
 //   console.log('fail')
 // }
 
-
+// =================================================================//
 
 
 
@@ -102,7 +102,7 @@
 // }
 
 
-
+// =================================================================//
 
 // personalData.size = size;
 
@@ -114,17 +114,170 @@
 // console.log(metrics)
 
 
+// =================================================================//
+
+// let requiredNumber = 40;
+
+// let enterNumber = prompt("Введіть загадане число");
+
+// if(enterNumber > requiredNumber){
+//   console.log("Забагато")
+// }else if(enterNumber < requiredNumber){
+//   console.log("Замало")
+// }else{
+//   console.log("Вгадали")
+// }
 
 
-let requiredNumber = 40;
+// =====================================================
 
-let enterNumber = prompt("Введіть загадане число");
+// let fruits = [
+//   "apple",
+//   "banana",
+//   "orange",
+//   "pear",
+//   "grape",
+//   "pineapple",
+//   "strawberry",
+//   "watermelon",
+//   "kiwi",
+//   "mango",
+//   "peach",
+//   "lemon",
+//   "lime",
+//   "blueberry",
+//   "raspberry",
+//   "blackberry",
+//   "apricot",
+//   "cherry",
+//   "coconut",
+//   "fig",
+//   "pomegranate",
+//   "plum",
+//   "nectarine",
+//   "persimmon",
+//   "tangerine",
+//   "papaya",
+//   "guava",
+//   "jackfruit",
+//   "lychee",
+//   "starfruit",
+//   "cantaloupe",
+//   "honeydew",
+//   "mangosteen",
+//   "pawpaw",
+//   "durian",
+//   "tamarind",
+//   "mulberry",
+//   "currant",
+//   "gooseberry",
+//   "rambutan",
+//   "longan",
+//   "dragonfruit",
+//   "clementine",
+//   "satsuma",
+//   "mandarin",
+//   "tangelo",
+//   "yuzu",
+//   "nectarine",
+//   "persimmon",
+//   "tangerine",
+//   "papaya",
+//   "guava",
+//   "jackfruit",
+//   "lychee",
+//   "starfruit",
+//   "cantaloupe",
+//   "honeydew",
+//   "mangosteen",
+//   "pawpaw",
+//   "durian",
+//   "tamarind",
+//   "mulberry",
+//   "currant",
+//   "gooseberry",
+//   "rambutan",
+//   "longan",
+//   "dragonfruit",
+//   "clementine",
+//   "satsuma",
+//   "mandarin",
+//   "tangelo",
+//   "yuzu",
+//   "nectarine",
+//   "persimmon",
+//   "tangerine",
+//   "papaya",
+//   "guava",
+//   "jackfruit",
+//   "lychee",
+//   "starfruit",
+//   "cantaloupe",
+//   "honeydew",
+//   "mangosteen",
+//   "pawpaw",
+//   "durian",
+//   "tamarind",
+//   "mulberry",
+//   "currant",
+//   "gooseberry",
+//   "rambutan",
+// ];
 
-if(enterNumber > requiredNumber){
-  console.log("Забагато")
-}else if(enterNumber < requiredNumber){
-  console.log("Замало")
-}else{
-  console.log("Вгадали")
-}
-zz
+// let counter = 0;
+// fruits.forEach(function (item){
+//   if(item[0] == "a") {
+//     console.log(item);
+//     counter++;
+//   }
+// });
+
+
+// =============================================================== //
+// while (fruits.length > 0) {
+//   console.log(fruits.pop())
+// }
+// =============================================================== //
+
+
+// const position = fruits.indexOf("kiwi");
+// console.log(position)
+// if (position >= 0){
+//   console.log(`I like a ${fruits[position]}`);
+// }else{
+//   console.log('Error')
+// }
+
+
+let familyList = [
+  {
+    name: "John Doe",
+    age: 25,
+  },
+  {
+    name: "Jane Doe",
+    age: 24,
+  },
+  {
+    name: "Jack Doe",
+    age: 18,
+  },
+
+  {
+    name: "Janifer Doe",
+    age: 14,
+  },
+  {
+    name: "Sem Doe",
+    age: 24,
+  },
+];
+
+familyList.forEach((item)=>{
+  if(item.age >= 21){
+    console.log(item.name + ' ' + 'You adult!')
+  }
+})
+
+
+// console.log(familyList[0].name + " " + familyList[0].age)
