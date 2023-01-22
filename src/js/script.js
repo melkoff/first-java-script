@@ -1,5 +1,7 @@
 // const {name} = require("browser-sync");
 
+// const { use } = require("browser-sync");
+
 // let name = 'John';
 // let surname = 'Dou';
 // let middleName = 'Patrick';
@@ -248,36 +250,148 @@
 //   console.log('Error')
 // }
 
+// =============================================================== //
+// let familyList = [
+//   {
+//     name: "John Doe",
+//     age: 25,
+//   },
+//   {
+//     name: "Jane Doe",
+//     age: 24,
+//   },
+//   {
+//     name: "Jack Doe",
+//     age: 18,
+//   },
 
-let familyList = [
+//   {
+//     name: "Janifer Doe",
+//     age: 14,
+//   },
+//   {
+//     name: "Sem Doe",
+//     age: 24,
+//   },
+// ];
+
+// familyList.forEach((item)=>{
+//   if(item.age >= 21){
+//     console.log(item.name + ' ' + 'You adult!')
+//   } else if(item.age <= 21){
+//     console.log(item.name + ' ' + 'You are not adult!')
+//   }
+// })
+
+
+// console.log(familyList[0].name + " " + familyList[0].age)
+
+// =============================================================== //
+
+
+// const usersData = [
+//   {
+//     name: 'John',
+//     age: 25,
+//     surname: 'Doe',
+//     fatherName: 'Smith',
+//   },
+//   {
+//     name: 'Jane',
+//     age: 30,
+//     surname: 'Doe',
+//     fatherName: 'Sarah',
+//   },
+//   {
+//     name: 'Jack',
+//     age: 28,
+//     surname: 'Doe',
+//     fatherName: 'John',
+//   },
+//   {
+//     name: 'Jill',
+//     age: 32,
+//     surname: 'Doe',
+//     fatherName: 'Monica'
+//   }
+// ]
+
+// function getInitialsUser(surname, name, fatherName) {
+//   const initials = surname + ' ' + name[0] + '.' + fatherName[0] + '.';
+//   return initials;
+// }
+
+
+// const userInitials = getInitialsUser("Doe", "John", "Smith");
+
+// usersData.forEach((user) => {
+//   const userInitials = getInitialsUser(user.surname, user.name, user.fatherName);
+//   console.log(userInitials + ' ' + user.age);
+// })
+
+
+// =============================================================== //
+
+
+// 1. Persinal data of users
+const usersData = [
   {
-    name: "John Doe",
+    name: "John",
     age: 25,
+    surname: "Doe",
+    fatherName: "Smith",
   },
   {
-    name: "Jane Doe",
-    age: 24,
+    name: "Jane",
+    age: 30,
+    surname: "Doe",
+    fatherName: "Sarah",
   },
   {
-    name: "Jack Doe",
-    age: 18,
-  },
-
-  {
-    name: "Janifer Doe",
-    age: 14,
+    name: "Jack",
+    age: 28,
+    surname: "Doe",
+    fatherName: "John",
   },
   {
-    name: "Sem Doe",
-    age: 24,
+    name: "Jill",
+    age: 12,
+    surname: "Doe",
+    fatherName: "Monica",
   },
 ];
 
-familyList.forEach((item)=>{
-  if(item.age >= 21){
-    console.log(item.name + ' ' + 'You adult!')
+
+function isAdult(age) {
+  if (age >= 18){
+    return true
+  }else{
+    return false
+  }
+}
+
+usersData.forEach((user) => {
+  console.log(user.age)
+  const ADULT = isAdult(user.age)
+  console.log(ADULT)
+  if(ADULT){
+    console.log('YOU ARE ADULT', user.surname + '.' + user.name[0] + '.' + user.fatherName[0])
+  }else{
+    console.log('YOU ARE NOT ADULT', user.surname + '.' + user.name[0] + '.' + user.fatherName[0])
   }
 })
 
 
-// console.log(familyList[0].name + " " + familyList[0].age)
+// =============================================================== //
+
+
+// function displayAlertInputText(text){
+//   alert(text);
+// }
+
+// //Input data to display in alert
+// const inputText = prompt("Enter text");
+// displayAlertInputText(inputText)
+
+
+// =============================================================== //
